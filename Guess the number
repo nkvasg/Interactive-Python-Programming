@@ -6,13 +6,13 @@ import random
 # Initialize global variables used in your code
 secret_number = 0
 stop = 100
-remaining_guesses = 8
+remaining_guesses = 7
 
 
 def start_game(stop):
     global secret_number, remaining_guesses
     if stop == 100:
-        remaining_guesses = 8
+        remaining_guesses = 7
     else:
         remaining_guesses = 10
     secret_number = random.randrange(0, stop)
@@ -24,7 +24,7 @@ def range100():
     # button that changes range to range [0,100) and restarts
     global stop, remaining_guesses
     stop = 100
-    remaining_guesses = 8
+    remaining_guesses = 7
     start_game(stop)
     
 def range1000():
